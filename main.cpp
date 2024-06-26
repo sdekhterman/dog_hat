@@ -1,29 +1,7 @@
 #include <iostream>
+#include "doggo.h"
+
 using namespace std;
-
-class Doggo {
-  public:
-    void setDogHat(int hatInt);
-    int getDogHat();
-    Doggo()
-    {
-        cout<<"A dog approaches from the distance."<<endl;
-    }
-    ~Doggo()
-    {
-        cout<<"Years pass and yet the memory of the dog stays with you.";
-    }
-  private:   
-    int dogHatStatus;
-};
-
-void Doggo::setDogHat(int hatInt) {
-  dogHatStatus = hatInt;
-}
-
-int Doggo::getDogHat() {
-  return dogHatStatus;
-}
 
 int main() {
     Doggo dog;
