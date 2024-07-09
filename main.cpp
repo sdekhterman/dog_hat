@@ -31,6 +31,16 @@ int main() {
     cin >> userInt;
     dog.setDogHat(userInt);
 
+    // a try-catch for inquisitive little coders
+    try {
+        if (userInt > 999) {
+            throw userInt;
+        }
+    } 
+    catch(int userInt) {
+        cout << "That sure was a big number!"<< endl;
+    }
+    
     // provide story based on user integer input
     switch(dog.getDogHat()){
         case 1:
